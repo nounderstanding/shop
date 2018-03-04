@@ -1,0 +1,64 @@
+/*历史地址*/
+.history_address{
+	/*display: none;*/
+}
+.often_address_box li{
+	padding: 15px;
+	color: #333;
+	border-bottom: 1px solid #dedede;
+}
+.often_address_box li i{
+	float: right;
+	line-height: 2.7rem;
+	font-size: 1.2rem;
+	color: #aaa;
+}
+.often_address_box li .name_phone{
+	line-height: 1.8rem;
+}
+.often_address_box li .name_phone strong{
+	font-size: 0.9rem;
+}
+.often_address_box li .name_phone span{
+	font-size: 0.9rem;
+	margin-left: 5px;
+}
+.often_address{
+	font-size: 0.9rem;
+}
+.clear_history{
+	width: 100%;
+	padding: 15px;
+}
+.clear_history button{
+ 	display: block;
+ 	width: 100%;
+	padding: 10px 0;
+	text-align: center;
+	background: #a00;
+	border: none;
+	outline: none;
+	color: white;
+	border-radius: 5px;
+	font-size: 0.9rem;
+}
+.no_history{
+	display: none;
+	position: fixed;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #eee;
+}
+.no_history i{
+	display: block;
+	color: #bbb;
+	text-align: center;
+	padding: 100px 0 30px;
+}
+.no_history p{
+	text-align: center;
+	color: #333;
+	font-size: 0.9rem;
+}

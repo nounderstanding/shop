@@ -1,0 +1,9 @@
+body{
+	background: #eee;
+}
+p{
+	text-align: center;
+	color: #333;
+	margin-top: 200px;
+	font-size: 0.9rem;
+}

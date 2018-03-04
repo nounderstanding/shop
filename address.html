@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>购买地址</title>
+		<link rel="icon" href="img/logo.ico" />
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/address.css" />
+		<link rel="stylesheet" type="text/css" href="fonts/iconfont.css" />
+		<style type="text/css">
+			.a {
+				display: block;
+				width: 100%;
+				height: 40px;
+				text-align: center;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a href="index.html"><i class="iconfont icon-arrow-left icon-left"></i></a>
+			<h1 class="mui-title">生成订单 </h1>
+		</header>
+		<!--配送地址-->
+		<div class="send_address">
+			<div class="send_address_content">
+				<i class="iconfont icon-dizhi1"></i>
+				<span>配送地址</span>
+			</div>
+			<div class="receive_address clearfix">
+				<span>请填写您的收货地址</span>
+				<i class="iconfont icon-youjiantou"></i>
+			</div>
+		</div>
+		<!--商品信息-->
+		<div class="goods_order">
+			<div class="send_address_content">
+				<span>商品订单</span>
+			</div>
+			<div class="img_message clearfix">
+				<img src="img/classify/classify2.jpg" alt="商品缩略图" />
+				<i class="iconfont icon-youjiantou"></i>
+				<span>共1件</span>
+			</div>
+			<div class="goods_message clearfix">
+				<span>商品总额:</span>
+				<span>￥297</span>
+			</div>
+			<div class="goods_message clearfix" style="padding-top: 0;">
+				<span>运费：</span>
+				<span>￥0</span>
+			</div>
+			<div class="goods_message clearfix" style="padding-top: 0;">
+				<span>优惠/抵扣：</span>
+				<span>￥0</span>
+			</div>
+		</div>
+		<!--submit_order提交订单-->
+		<div class="submit_order">
+			<p>总计:<span>￥297</span></p>
+			<a href="order.html"><button class="commit_order">提交订单</button></a>
+		</div>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/address.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

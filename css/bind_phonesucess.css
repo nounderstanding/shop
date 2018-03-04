@@ -1,0 +1,67 @@
+body{
+	background: #eee;
+}
+.bind_phone_box{
+	padding: 20px;
+	background: white;
+}
+.bind_phone_box img{
+	display: block;
+	margin: 8px auto;
+	width: 54px;
+}
+.bind_phone_box p{
+	text-align: center;
+	line-height: 1.5rem;
+}
+.bind_phone_box p.phone_text{
+	color: #888;
+}
+.bind_phone_box p.phone_number_hide{
+	font-size: 0.9rem;
+}
+.change_number{
+	display: block;
+	padding: 40px 15px;
+	width: 100%;
+}
+.change_number button{
+	display: block;
+	width: 100%;
+	background: #FEA035;
+	color: white;
+	font-size: 0.9rem;
+	padding: 10px 0;
+	text-align: center;
+	border: none;
+	outline: none;
+	border-radius: 3px;
+}
+header {
+	position: absolute;
+	width: 100%;
+	height: 44px;
+	background: #f7f7f7;
+	box-shadow: 0 1px 6px #ccc;
+	padding-left: 10px;
+	z-index: 9999;
+	top:0;
+	left: 0;
+}
+header h1 {
+	position: absolute;
+	right: 40px;
+	left: 40px;
+	display: inline-block;
+	overflow: hidden;
+	width: auto;
+	margin: 0;
+	text-overflow: ellipsis;
+	font-size: 17px;
+	font-weight: 500;
+	padding: 0;
+	text-align: center;
+	white-space: nowrap;
+	color: #000;
+	line-height: 44px;
+}

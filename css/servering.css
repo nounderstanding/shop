@@ -1,0 +1,15 @@
+body{
+	background: #eee;
+}
+i{
+	display: block;
+	color: #bbb;
+	text-align: center;
+	padding: 100px 0 30px;
+}
+p{
+	text-align: center;
+	color: #333;
+	font-size: 0.9rem;
+	padding: 0 10px;
+}

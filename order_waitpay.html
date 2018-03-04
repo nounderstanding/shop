@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>订单详情</title>
+		<link rel="icon" href="img/logo.ico" />
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/order_all.css" />
+		<link rel="stylesheet" type="text/css" href="css/order_detial.css" />
+		<link rel="stylesheet" type="text/css" href="fonts/iconfont.css" />
+		<style type="text/css">
+			.mui-popup-button{
+				
+			}
+			body{
+				line-height:normal;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a href="order_all.html"><i class="iconfont icon-arrow-left icon-left"></i></a>
+			<h1 class="mui-title">订单详情</h1>
+		</header>
+		<!--订单状态-->
+		<div class="order_num clearfix" style="margin-top:44px;">
+			<strong class="fl state">待付款</strong>
+			<span class="fr">下单时间：2017-08-23 10:33:04</span>
+		</div>
+		<!--订单地址-->
+		<div class="order_address">
+			<p>
+				<span>王俊丽</span>
+				<span>18235185436</span>
+			</p>
+			<p>地址</p>
+		</div>
+		<div class="line3"></div>
+		<!--订单信息-->
+		<ul class="order_all">
+			<li>
+				<a href="">
+					<!--订单号-->
+					<div class="order_num clearfix">
+						<span>订单信息</span>
+					</div>
+					<!--订单信息-->
+					<div class="order_img_text clearfix">
+						<div class="order_img">
+							<img src="img/order/order_img.jpg" />
+						</div>
+						<div class="order_text">
+							<p>葡萄5斤<span>￥30.00</span></p>
+							<p>2份</p>
+						</div>
+					</div>
+					<!--价钱和日期-->
+					<div class="order_price_date clearfix">
+						<span style="color: #555;">订单号：</span>
+						<span>W2017082310330471711618661</span>
+					</div>
+				</a>
+			</li>
+		</ul>
+		<div class="line3"></div>
+		<!--订单费用-->
+		<div class="order_price">
+			<p>订单费用</p>
+			<ul>
+				<li class="clearfix">
+					<span>商品总额:</span>
+					<span>￥30.00</span>
+				</li>
+				<li class="clearfix">
+					<span>运费:</span>
+					<span>￥0.00</span>
+				</li>
+				<li class="clearfix">
+					<span>付款金额:</span>
+					<span style="color: #F97E24;">￥30.00</span>
+				</li>
+				<li class="clearfix">
+					<span>付款方式:</span>
+					<span>微信</span>
+				</li>
+			</ul>
+		</div>
+		<div class="line3"></div>
+		<div class="" style="margin-bottom: 74px;"></div>
+		<div class="pay_or_cancel clearfix">
+			<p class="cancel_order" id="cancel_order">取消订单</p>
+			<p class="pay_gogo">去支付</p>
+		</div>
+		<div class="pay_style_select_box">
+			<div class="pay_style_select">
+				<p class="wechat_pay">微信支付</p>
+				<p class="alipay_pay">支付宝支付</p>
+				<div class="cancel">取消</div>
+			</div>
+		</div>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/order_detial.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			var btnArray = ['否', '是'];
+			document.getElementById("cancel_order").addEventListener('tap', function() {
+				var btnArray = ['否', '是'];
+				mui.confirm('确认要取消订单吗？', '七刀商城', btnArray, function(e) {
+					if (e.index == 1) {
+						window.location.href="order_canceled.html";
+					} 
+				})
+			});
+		</script>
+	</body>
+
+</html>

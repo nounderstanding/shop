@@ -1,0 +1,55 @@
+nav{
+	border-bottom:1px solid #e5e5e5;
+}
+.classify{
+	padding: 0 16px;
+}
+.classify ul{
+	width: 100%;
+}
+.classify ul li{
+	width: 100%;
+	padding: 15px 0;
+	border-bottom:1px solid #e5e5e5;
+}
+.classify ul li a{
+	display: block;
+	width: 100%;
+}
+.classify ul li a .img{
+	height: 0;
+	padding-bottom: 58.14%;
+	background: #f5f5f5;
+	overflow: hidden;
+}
+.classify ul li a .img img{
+	width: 100%;
+}
+.classify ul li a p.title{
+	color: #333;
+	font-size: 1rem;
+	line-height: 2rem;
+	margin-top: 8px;
+}
+.classify ul li a p.description{
+	color:#999;
+	font-size: 0.6rem;
+	line-height: 1rem;
+}
+.classify ul li a .price_read{
+	width: 100%;
+}
+.classify ul li a .price_read span{
+	display: inline-block;
+	float: left;
+	color: #333;
+	margin-top: 12px;
+}
+.classify ul li a .price_read span:first-child{
+	font-size: 1rem;
+}
+.classify ul li a .price_read span:last-child{
+	float: right;
+	border:1px solid #333;
+	padding: 2px 20px;
+}

@@ -1,0 +1,33 @@
+body{
+	background: #eee;
+}
+img{
+	display: block;
+	width: 200px;
+	margin: 0 auto;
+	margin-top:160px;
+}
+p{
+	text-align: center;
+	color: #888;
+}
+.consult{
+	position: fixed;
+	right: 10px;
+	bottom: 130px;
+	width: 60px;
+	height: 60px;
+	background: white;
+	border-radius: 50%;
+	box-shadow: 0px 3px 1px #ccc;
+}
+.consult i{
+	text-align: center;
+	display: block;
+	padding: 10px 15px 2px;
+	font-size: 1.4rem;
+	color: #F97E24;
+}
+.consult p{
+	text-align: center;
+}

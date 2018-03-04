@@ -1,0 +1,97 @@
+.order_execute_img{
+	width: 190px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+.order_execute_img img{
+	width: 190px;
+}
+.order_execute_text{
+	text-align: center;
+	padding-bottom: 20px;
+	font-size: 0.9rem;
+	color: #888;
+}
+.order_number,.order_date{
+	margin: 0 15px;
+	padding: 3px 0;
+	color: #888;
+}
+.order_pay_money{
+	border-top:1px solid #dedede;
+	padding: 15px;
+	font-size: 0.9rem;
+	color: #333;
+	margin-top:5px;
+}
+.line{
+	background: #eee;
+	height: 8px;
+}
+.pay_style{
+	padding-left: 10px;
+}
+.pay_style .wechat,.pay_style .alipay{
+	border-bottom: 1px solid #dedede;
+	padding: 10px 0;
+	font-size: 0.9rem;
+	color: #333;
+}
+.pay_style .wechat span{
+	font-size: 0.2rem;
+	color: #F97E24;
+	border:1px solid #F97E24;
+	padding: 2px 5px;
+	margin-left: 10px;
+	border-radius: 2px;
+}
+.pay_style i{
+	font-size: 1.2rem;
+	margin-right: 8px;
+}
+.icon-icon-alipay{
+	color: #00AAEE;
+}
+.icon-weixinzhifu{
+	color: #00C739;
+}
+.pay_style .icon-duihao{
+	float: right;
+	margin-right: 10px;
+	color: #F97E24;
+}
+.spread{
+	border-bottom: 1px solid #dedede;
+	padding: 10px;
+	text-align: center;
+	font-size: 0.8rem;
+	color: #999;
+}
+.spread i{
+	color: #333;
+	margin-left: 5px;
+	font-weight: bold;
+}
+.icon-xiajiantous{
+	display: inline-block;
+}
+.icon-xiajiantou-copy{
+	display: none;
+}
+.pay_spread{
+	z-index: 9999;
+}
+.pay_button_once{
+	padding: 10px;
+	margin-top:24px;
+}
+.pay_button_once button{
+	width: 100%;
+	display: block;
+	border: none;
+	outline: none;
+	background: #F97E24;
+	color: white;
+	padding: 11px 0;
+	font-size: 0.9rem;
+}

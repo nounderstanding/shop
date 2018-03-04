@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<title>购物车</title>
+		<link rel="icon" href="img/logo.ico" />
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/shopping.css"/>
+		<link rel="stylesheet" type="text/css" href="fonts/iconfont.css"/>
+		<style type="text/css">
+			.mui-content>.mui-table-view:first-child {
+			    margin-top: 0px;
+			}
+			.mui-checkbox.mui-left input[type=checkbox]{
+			    left: 0;
+			}
+			.mui-checkbox.mui-left label{
+			    padding-left: 36px;
+			}
+			.mui-table-view-cell {
+			    padding:10px;
+			}
+			.mui-checkbox input[type=checkbox]{
+			    top: 26px;
+			}
+			.mui-numbox{
+				padding: 0 24px;
+				background: #fff;
+			}
+			.mui-numbox [class*=btn-numbox]{
+				width: 24px;
+				background: #fff;
+			}
+		</style>
+	</head>
+	<body>
+		<!--<div class="header">
+			购物车
+		</div>-->
+		<header class="mui-bar mui-bar-nav">
+		    <h1 class="mui-title">购物车</h1>
+		</header>
+		
+		<!--购物车列表-->
+		<div class="mui-content shopping_list">
+			<ul id="shoppinglist" class="mui-table-view">
+				<li class="mui-table-view-cell shopping_list_li">
+					<a href="">
+						<div class="mui-slider-right mui-disabled">
+							<a class="mui-btn mui-btn-red">删除</a>
+						</div>
+						<div class="mui-slider-handle mui-table">
+							<div class="mui-table-cell">
+								<div class="mui-input-row mui-checkbox mui-left cleafix" style="position: relative;">
+									<!--对勾-->
+									<i class="iconfont icon-iconfontwancheng fl"></i>
+									<img class="fl" src="img/goods/grape1.jpg"/>
+									<div class="fl shopping_title_size">
+										<!--产品标题-->
+										<p class="shopping_title">
+											香橙500g
+										</p>
+										<!--产品规格-->
+										<p class="shopping_size">
+											500g
+										</p>
+										<!--产品价格+数量-->
+										<div class="shopping_price_number cleafix">
+											<p class="fl">￥<span>10</span></p>
+											<div style="clear: both;height: 0;"></div>
+										</div>
+									</div>
+									<div class="mui-numbox shopping_numbox" style="width: 81px;height: 24px;" data-numbox-min='1'>
+										<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+										<input class="mui-input-numbox" type="number" />
+										<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell shopping_list_li">
+					<a href="">
+						<div class="mui-slider-right mui-disabled">
+							<a class="mui-btn mui-btn-red">删除</a>
+						</div>
+						<div class="mui-slider-handle mui-table">
+							<div class="mui-table-cell">
+								<div class="mui-input-row mui-checkbox mui-left cleafix" style="position: relative;">
+									<!--对勾-->
+									<i class="iconfont icon-iconfontwancheng fl"></i>
+									<img class="fl" src="img/goods/orange.jpg"/>
+									<div class="fl shopping_title_size">
+										<!--产品标题-->
+										<p class="shopping_title">
+											香橙500g
+										</p>
+										<!--产品规格-->
+										<p class="shopping_size">
+											500g
+										</p>
+										<!--产品价格+数量-->
+										<div class="shopping_price_number cleafix">
+											<p class="fl">￥<span>10</span></p>
+											<div style="clear: both;height: 0;"></div>
+										</div>
+									</div>
+									<div class="mui-numbox shopping_numbox" style="width: 81px;height: 24px;" data-numbox-min='1'>
+										<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+										<input class="mui-input-numbox" type="number" />
+										<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell shopping_list_li">
+					<a href="">
+						<div class="mui-slider-right mui-disabled">
+							<a class="mui-btn mui-btn-red">删除</a>
+						</div>
+						<div class="mui-slider-handle mui-table">
+							<div class="mui-table-cell">
+								<div class="mui-input-row mui-checkbox mui-left cleafix" style="position: relative;">
+									<!--对勾-->
+									<i class="iconfont icon-iconfontwancheng fl"></i>
+									<img class="fl" src="img/goods/orange.jpg"/>
+									<div class="fl shopping_title_size">
+										<!--产品标题-->
+										<p class="shopping_title">
+											香橙500g
+										</p>
+										<!--产品规格-->
+										<p class="shopping_size">
+											500g
+										</p>
+										<!--产品价格+数量-->
+										<div class="shopping_price_number cleafix">
+											<p class="fl">￥<span>10</span></p>
+											<div style="clear: both;height: 0;"></div>
+										</div>
+									</div>
+									<div class="mui-numbox shopping_numbox" style="width: 81px;height: 24px;" data-numbox-min='1'>
+										<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+										<input class="mui-input-numbox" type="number" />
+										<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell shopping_list_li">
+					<a href="">
+						<div class="mui-slider-right mui-disabled">
+							<a class="mui-btn mui-btn-red">删除</a>
+						</div>
+						<div class="mui-slider-handle mui-table">
+							<div class="mui-table-cell">
+								<div class="mui-input-row mui-checkbox mui-left cleafix" style="position: relative;">
+									<!--对勾-->
+									<i class="iconfont icon-iconfontwancheng fl"></i>
+									<img class="fl" src="img/goods/orange.jpg"/>
+									<div class="fl shopping_title_size">
+										<!--产品标题-->
+										<p class="shopping_title">
+											香橙500g
+										</p>
+										<!--产品规格-->
+										<p class="shopping_size">
+											500g
+										</p>
+										<!--产品价格+数量-->
+										<div class="shopping_price_number cleafix">
+											<p class="fl">￥<span>10</span></p>
+											<div style="clear: both;height: 0;"></div>
+										</div>
+									</div>
+									<div class="mui-numbox shopping_numbox" style="width: 81px;height: 24px;" data-numbox-min='1'>
+										<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+										<input class="mui-input-numbox" type="number" />
+										<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell shopping_list_li">
+					<a href="">
+						<div class="mui-slider-right mui-disabled">
+							<a class="mui-btn mui-btn-red">删除</a>
+						</div>
+						<div class="mui-slider-handle mui-table">
+							<div class="mui-table-cell">
+								<div class="mui-input-row mui-checkbox mui-left cleafix" style="position: relative;">
+									<!--对勾-->
+									<i class="iconfont icon-iconfontwancheng fl"></i>
+									<img class="fl" src="img/goods/orange.jpg"/>
+									<div class="fl shopping_title_size">
+										<!--产品标题-->
+										<p class="shopping_title">
+											香橙500g
+										</p>
+										<!--产品规格-->
+										<p class="shopping_size">
+											500g
+										</p>
+										<!--产品价格+数量-->
+										<div class="shopping_price_number cleafix">
+											<p class="fl">￥<span>10</span></p>
+											<div style="clear: both;height: 0;"></div>
+										</div>
+									</div>
+									<div class="mui-numbox shopping_numbox" style="width: 81px;height: 24px;" data-numbox-min='1'>
+										<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+										<input class="mui-input-numbox" type="number" />
+										<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell shopping_list_li">
+					<a href="">
+						<div class="mui-slider-right mui-disabled">
+							<a class="mui-btn mui-btn-red">删除</a>
+						</div>
+						<div class="mui-slider-handle mui-table">
+							<div class="mui-table-cell">
+								<div class="mui-input-row mui-checkbox mui-left cleafix" style="position: relative;">
+									<!--对勾-->
+									<i class="iconfont icon-iconfontwancheng fl"></i>
+									<img class="fl" src="img/goods/orange.jpg"/>
+									<div class="fl shopping_title_size">
+										<!--产品标题-->
+										<p class="shopping_title">
+											香橙500g
+										</p>
+										<!--产品规格-->
+										<p class="shopping_size">
+											500g
+										</p>
+										<!--产品价格+数量-->
+										<div class="shopping_price_number cleafix">
+											<p class="fl">￥<span>10</span></p>
+											<div style="clear: both;height: 0;"></div>
+										</div>
+									</div>
+									<div class="mui-numbox shopping_numbox" style="width: 81px;height: 24px;" data-numbox-min='1'>
+										<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+										<input class="mui-input-numbox" type="number" />
+										<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell shopping_list_li">
+					<a href="">
+						<div class="mui-slider-right mui-disabled">
+							<a class="mui-btn mui-btn-red">删除</a>
+						</div>
+						<div class="mui-slider-handle mui-table">
+							<div class="mui-table-cell">
+								<div class="mui-input-row mui-checkbox mui-left cleafix" style="position: relative;">
+									<!--对勾-->
+									<i class="iconfont icon-iconfontwancheng fl"></i>
+									<img class="fl" src="img/goods/orange.jpg"/>
+									<div class="fl shopping_title_size">
+										<!--产品标题-->
+										<p class="shopping_title">
+											香橙500g
+										</p>
+										<!--产品规格-->
+										<p class="shopping_size">
+											500g
+										</p>
+										<!--产品价格+数量-->
+										<div class="shopping_price_number cleafix">
+											<p class="fl">￥<span>10</span></p>
+											<div style="clear: both;height: 0;"></div>
+										</div>
+									</div>
+									<div class="mui-numbox shopping_numbox" style="width: 81px;height: 24px;" data-numbox-min='1'>
+										<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+										<input class="mui-input-numbox" type="number" />
+										<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell shopping_list_li">
+					<a href="">
+						<div class="mui-slider-right mui-disabled">
+							<a class="mui-btn mui-btn-red">删除</a>
+						</div>
+						<div class="mui-slider-handle mui-table">
+							<div class="mui-table-cell">
+								<div class="mui-input-row mui-checkbox mui-left cleafix" style="position: relative;">
+									<!--对勾-->
+									<i class="iconfont icon-iconfontwancheng fl"></i>
+									<img class="fl" src="img/goods/orange.jpg"/>
+									<div class="fl shopping_title_size">
+										<!--产品标题-->
+										<p class="shopping_title">
+											香橙500g
+										</p>
+										<!--产品规格-->
+										<p class="shopping_size">
+											500g
+										</p>
+										<!--产品价格+数量-->
+										<div class="shopping_price_number cleafix">
+											<p class="fl">￥<span>10</span></p>
+											<div style="clear: both;height: 0;"></div>
+										</div>
+									</div>
+									<div class="mui-numbox shopping_numbox" style="width: 81px;height: 24px;" data-numbox-min='1'>
+										<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+										<input class="mui-input-numbox" type="number" />
+										<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell shopping_list_li">
+					<a href="">
+						<div class="mui-slider-right mui-disabled">
+							<a class="mui-btn mui-btn-red">删除</a>
+						</div>
+						<div class="mui-slider-handle mui-table">
+							<div class="mui-table-cell">
+								<div class="mui-input-row mui-checkbox mui-left cleafix" style="position: relative;">
+									<!--对勾-->
+									<i class="iconfont icon-iconfontwancheng fl"></i>
+									<img class="fl" src="img/goods/orange.jpg"/>
+									<div class="fl shopping_title_size">
+										<!--产品标题-->
+										<p class="shopping_title">
+											香橙500g
+										</p>
+										<!--产品规格-->
+										<p class="shopping_size">
+											500g
+										</p>
+										<!--产品价格+数量-->
+										<div class="shopping_price_number cleafix">
+											<p class="fl">￥<span>10</span></p>
+											<div style="clear: both;height: 0;"></div>
+										</div>
+									</div>
+									<div class="mui-numbox shopping_numbox" style="width: 81px;height: 24px;" data-numbox-min='1'>
+										<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+										<input class="mui-input-numbox" type="number" />
+										<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="bottom_fifth" style="margin-bottom: 95px;"></div>
+		<!--结算购物车-->
+		<div class="pay_total_box cleafix">
+			<div class="fl all_select"><i class="iconfont icon-iconfontwancheng fl"></i><span>全选</span></div>
+			<button class="fr">结算(<span>0</span>)</button>
+			<div class="fr all_price">合计<span>￥</span><span class="all_price_num">0.00</span></div>
+		</div>
+		<!--底部导航条-->
+		<div class="footer_nav">
+			<ul class="clearfix">
+				<li>
+					<a href="index.html">
+						<i class="iconfont icon-shouye1"></i>
+						<p>首页</p>
+					</a>
+				</li>
+				<li>
+					<a href="shopping.html" class="active">
+						<i class="iconfont icon-gouwuchefill"></i>
+						<p>购物车</p>
+					</a>
+				</li>
+				<li>
+					<a href="order_all.html">
+						<i class="iconfont icon-dingdan"></i>
+						<p>订单</p>
+					</a>
+				</li>
+				<li>
+					<a href="my.html">
+						<i class="iconfont icon-wode"></i>
+						<p>我的</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script>
+			mui.init();
+			(function($) {
+				var btnArray = ['确认', '取消'];
+				$('#shoppinglist').on('slideleft', '.mui-table-view-cell', function(event) {
+					var elem = this;
+					mui.confirm('确认删除该商品？', '七刀商城', btnArray, function(e) {
+						if (e.index == 0) {
+							elem.parentNode.removeChild(elem);
+						} else {
+							setTimeout(function() {
+								$.swipeoutClose(elem);
+							}, 0);
+						}
+					});
+				});
+			})(mui);
+		</script>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/shopping.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

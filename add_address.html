@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>购买地址</title>
+		<link rel="icon" href="img/logo.ico" />
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link href="css/mui.picker.css" rel="stylesheet" />
+		<link href="css/mui.poppicker.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/add_address.css" />
+		<link rel="stylesheet" type="text/css" href="fonts/iconfont.css" />
+		<style type="text/css">
+			input[type=text]{
+				font-size: .9rem;
+				margin-bottom: 0;
+				padding: 0;
+				display: inline-block;
+				width: auto;
+			}
+			.a {
+				display: block;
+				width: 100%;
+				height: 40px;
+				text-align: center;
+			}
+			button{
+				padding: 0;
+			}
+			p{
+				margin-bottom: 0;
+			}
+			.mui-btn-blue{
+			    color: #fff;
+			    border: 1px solid #F97E24;
+			    background-color: #F97E24;
+		    }
+		    body{
+		    	/*line-height: normal;*/
+		    }
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a href="index.html"><i class="iconfont icon-arrow-left icon-left"></i></a>
+			<h1 class="mui-title">收货地址</h1>
+		</header>
+		<!--没有地址-->
+		<div class="noplace_box">
+			<div class="noplace">
+				<img src="img/address/no_place.png" />
+				<p>你还没有添加收货地址哦</p>
+			</div>
+			<p class="address_add_logo"><i class="iconfont icon-jia"></i>添加新地址</p>
+		</div>
+		<div class="write_address">
+			<div class="write_address_message">
+				<span>收货人姓名：</span>
+				<input type="text" name="" id="" value="" placeholder="请输入您的姓名" />
+			</div>
+			<div class="write_address_message">
+				<span>联系方式：</span>
+				<input type="text" name="" id="" value="" placeholder="请输入手机号" />
+			</div>
+			<div class="write_address_message" id="showCityPicker3">
+				<span>省区市：</span>
+				<span id="cityResult3"></span>
+				<i class="iconfont icon-youjiantou"></i>
+			</div>
+			<div class="write_address_message">
+				<span>详细地址：</span>
+				<input type="text" name="" id="" value="" placeholder="请输入详细地址" />
+			</div>
+			<div class="button">
+				<button class="save_address">保存地址</button>
+			</div>
+		</div>
+		<!--确认收货信息-->
+		<div class="confirm_address_box">
+			<div class="confirm_address">
+				<p class="confirm_address_phone">确认地址和手机号准确吗？</p>
+				<div class="address_write_save">
+					<p class="address_confirm"><span>地址</span><span>详细地址</span></p>
+					<div class="name_confirm">
+						<span>姓名</span>
+						<span>手机号</span>
+					</div>
+				</div>
+				<ul class="ok_or_no clearfix">
+					<li class="no">取消</li>
+					<li class="ok" style="color:#0BB20C;">确定</li>
+				</ul>
+			</div>
+		</div>
+		<!--选择收货地址-->
+		<!--<div class="select_address reminder">
+			<p>收货地址</p>
+		</div>-->
+		<!--提示信息-->
+		<div class='reminder' id="no_address" style="display: none;">
+			未知收货地址！
+		</div>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/add_address.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mui.min.js"></script>
+		<script src="js/mui.picker.js"></script>
+		<script src="js/mui.poppicker.js"></script>
+		<script src="js/city.data-3.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			(function($, doc) {
+				$.init();
+				$.ready(function() {
+					var _getParam = function(obj, param) {
+						return obj[param] || '';
+					};
+					var cityPicker3 = new $.PopPicker({
+						layer: 3
+					});
+					cityPicker3.setData(cityData3);
+					var showCityPickerButton = doc.getElementById('showCityPicker3');
+					var cityResult3 = doc.getElementById('cityResult3');
+					showCityPickerButton.addEventListener('tap', function(event) {
+						cityPicker3.show(function(items) {
+							cityResult3.innerText =_getParam(items[0], 'text') + " " + _getParam(items[1], 'text') + " " + _getParam(items[2], 'text');
+							//返回 false 可以阻止选择框的关闭
+							//return false;
+						});
+					}, false);
+				});
+			})(mui, document);
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,102 @@
+body{
+	background: #eee;
+}
+.footer{
+	width: 100%;
+	text-align: center;
+}
+.footer a{
+	display: inline-block;
+	font-size: 0.9rem;
+	line-height: 3rem;
+	margin-right: 8px;
+	color: #333;
+}
+.footer a.circle{
+	font-size:1rem;
+}
+.photo{
+	padding: 20px 15px;
+	background: #333;
+}
+.photo li{
+	float: left;
+}
+.photo li:first-child{
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-right: 24px;
+}
+.photo li:first-child img{
+	width: 64px;
+}
+.photo li:last-child p:first-child{
+	color: white;
+	font-size: 0.8rem;
+	padding-top: 15px;
+	padding-bottom: 8px;
+}
+.photo li:last-child p:last-child{
+	color: #888;
+	font-size: 0.7rem;
+}
+.title_style{
+	padding: 10px;
+	padding-right: 0;
+	border-bottom:1px solid #dedede;
+	margin-left: 15px;
+}
+.title_style i{
+	float: right;
+	color: #333;
+	font-size: 1rem;
+	margin-right: 15px;
+}
+.all_order{
+	width: 100%;
+	/*padding: 20px 10px;*/
+	border-bottom: 8px solid #eee;
+	background: white;
+}
+.all_order li,.my_service li{
+	float: left;
+	text-align: center;
+	padding: 15px 0;
+}
+.all_order li{
+	width: 20%;
+}
+.all_order li a i,.my_service li a i{
+	color: #999999;
+	font-size: 1.5rem;
+}
+.all_order li a p,.my_service li a p{
+	margin-top:5px;
+	color: #333;
+	font-size: 0.4rem;
+}
+.all_order li a .iconfont_span{
+	position: relative;
+	display: inline-block;
+}
+.all_order li a .iconfont_span span{
+	position: absolute;
+	top:-2px;
+	right:-10px;
+	display: inline-block;
+	border-radius: 50%;
+	width: 14px;
+	height: 14px;
+	background: #F97E24;
+	color: white;
+}
+.my_service{
+	background: white;
+	margin-bottom: 30px;
+}
+.my_service li{
+	width: 25%;
+}
+

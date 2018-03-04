@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>订单结算</title>
+		<link rel="icon" href="img/logo.ico" />
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/order.css"/>
+		<link rel="stylesheet" type="text/css" href="fonts/iconfont.css"/>
+	</head>
+	<body>
+		<!--订单生成-->
+		<div class="order_execute_img">
+			<img src="img/order/wait.jpg"/>
+		</div>
+		<p class="order_execute_text">订单已生成，待支付</p>
+		<p class="order_number">订单号：W2017082310193171711619032</p>
+		<p class="order_date">下单时间：2017-08-23 10:19:31</p>
+		<p class="order_pay_money">您共需支付：<span style="color: #F97E24;font-size: 1rem;">￥834.00</span></p>
+		<!--分割线-->
+		<div class="line"></div>
+		<!--支付方式-->
+		<div class="pay_style">
+			<div class="wechat">
+				<i class="iconfont icon-weixinzhifu"></i>
+				微信支付<!--<span>推荐</span>-->
+				<i class="iconfont icon-duihao"></i>
+			</div>
+			<!--<div class="alipay" style="display: none;">
+				<i class="iconfont icon-icon-alipay"></i>
+				支付宝支付
+				<i class="iconfont icon-duihao" style="display: none;"></i>
+			</div>-->
+		</div>
+		<!--可滑动的展开
+		<div class="pay_spread">
+			<!--展开
+			<div class="spread">
+				展开
+				<i class="iconfont icon-xiajiantous"></i>
+				<!--<i class="iconfont icon-xiajiantou-copy"></i>
+			</div>-->
+			<!--立即支付-->
+			<div class="pay_button_once">
+				<button>立即支付</button>
+			</div>
+		</div>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/order.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

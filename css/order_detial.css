@@ -1,0 +1,136 @@
+body{
+	background: white;
+}
+.line3{
+	height: 8px;
+	background: #eee;
+}
+.order_address{
+	background: white;
+	padding: 15px;
+	font-size: 0.9rem;
+	line-height: 1.8rem;
+}
+.order_img_text{
+	position: relative;
+}
+.order_text span{
+	position: absolute;
+	right: 15px;
+	font-size: 1rem;
+	color: #000;
+}
+.order_all li a .order_img_text {
+    padding: 15px;
+}
+.order_all li a .order_price_date {
+    padding: 15px;
+}
+.order_all li a .order_price_date{
+	padding-top: 0;
+	margin-bottom: 0;
+}
+.order_all li a {
+    color: #333;
+}
+.order_price{
+	color: #333;
+	font-size: 0.9rem;
+	background: white;
+}
+.order_price p{
+	padding: 15px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.order_price ul{
+	padding: 15px;
+	margin-bottom: 10px;
+}
+.order_price ul li{
+	line-height: 1.8rem;
+}
+.order_price ul li span:first-child{
+	float: left;
+	color: #555;
+}
+.order_price ul li span:last-child{
+	float: right;
+}
+.hide_order{
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+	left: 0;
+	padding: 15px;
+}
+.hide_order p{
+	text-align: center;
+	border-radius: 5px;
+	border:1px solid #cdcdcd;
+	line-height: 40px;
+	font-size: 0.9rem;
+}
+.pay_or_cancel{
+	padding: 15px 15px;
+	position: fixed;
+	z-index:1111;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background: white;
+	border-top:1px solid #dedede;
+	font-size: 0.9rem;
+	font-weight: 100;
+}
+p{margin-bottom: 0;}
+.pay_or_cancel p{
+	width: 49%;
+	border:1px solid #cdcdcd;
+	padding: 10px;
+	text-align: center;
+	border-radius: 5px;
+}
+.pay_or_cancel p:first-child{
+	float: left;
+	margin-right: 2%;
+}
+.pay_or_cancel p:last-child{
+	float: right;
+	border-color:#F97E24;
+	color: #F97E24;
+}
+.pay_style_select_box{
+	display: none;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top:0;
+	bottom: 0;
+	background: rgba(0,0,0,.5);
+	z-index: 9999;
+}
+.pay_style_select_box .pay_style_select{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 20px 15px;
+	background: white;
+}
+.pay_style_select_box .pay_style_select p{
+	color: white;
+	text-align: center;
+	font-size: 1rem;
+	padding: 10px 0;
+	margin-bottom: 15px;
+}
+.pay_style_select_box .pay_style_select p.alipay_pay{
+	background: #00AAEE;
+}
+.pay_style_select_box .pay_style_select p.wechat_pay{
+	background: #00C739;
+}
+.cancel{
+	text-align: center;
+	font-size:0.9rem;
+}

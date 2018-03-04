@@ -1,0 +1,256 @@
+body{
+	background:white;
+}
+/*导航*/
+nav ul{
+	width: 100%;
+	/*规定段落中的文本不进行换行*/
+	white-space: nowrap;
+	font-size: 1rem;
+	overflow: hidden;
+	background: white;
+}
+nav ul li{
+	display: inline-block;
+	line-height: 40px;
+}
+nav ul li a{
+	display: inline-block;
+	color: #333;
+	text-align: center;
+	margin: 0 8px;
+}
+nav ul li.active a{
+	color: #F97E24;
+	/*border-bottom: 2px solid #61C5FE;*/
+}
+.form{
+	width: 100%;
+	background: #eee;
+	padding: 2px 0;
+}
+.search{
+	width: 92%;
+	margin:2% 4%;
+	border:1px solid #ccc;
+	height: 30px;
+	border-radius: 5px;
+	background: #fff;
+}
+.search input{
+	float: right;
+	width: 88%;
+	height: 100%;
+	border: none;
+	outline: none;
+	margin-right: 3px;
+}
+.search .search_logo{
+	display: inline-block;
+	float: left;
+	font-size: 1.2rem;
+	text-align: center;
+	line-height: 30px;
+	margin-left: 10px;
+	color: #888888;
+}
+.banner{
+	width: 100%;
+	margin:0 auto; 
+	position:relative; 
+	overflow:hidden; 
+}
+.banner ul{
+	 width:99999px;
+	 position:absolute; 
+	 top:0; 
+	 left:0; 
+	 overflow:hidden; 
+	 z-index: 1;
+}
+.banner ul li{
+	float:left; 
+	width:100%; 
+}
+.banner ul li a{
+	display: inline-block;
+	width: 100%;
+}
+.banner ul li a img{
+	width: 100%;
+}
+/*.banner .paging{
+	position: absolute;
+	height: 10px;
+	bottom: 10px;
+	left: 0;
+	z-index: 9999;
+}
+.banner .paging span{
+	display:inline-block; 
+	width:15px; 
+	height:3px; 
+	margin:3px; 
+	font-size:0px; 
+	line-height:0; 
+	/*text-indent:-9999px; 
+	background:rgba(0,0,0,.2);
+}
+.banner .paging span.on{
+	background: #fff;
+}*/
+/*商品列表*/
+.goods_list{
+	
+	width: 100%;
+	padding: 15px;
+}
+.goods_list a{
+	display: block;
+	margin-bottom: 12px;
+}
+.goods_list a dl{
+	position: relative;
+	display: block;
+	width: 100%;
+}
+.goods_list dl dt img{
+	width: 100%;
+}
+.goods_list dl dd{
+	position: absolute;
+	width: 100%;
+	height: 98%;
+	top:0;
+	left: 0;
+	background-image: -webkit-linear-gradient(left top,rgba(0,0,0,.7),rgba(0,0,0,0) 40%);
+	padding: 0.9rem;
+	color: white;
+	font-weight: 100;
+}
+.goods_list dl dd .goods_title{
+	font-size: 1.2rem;
+	margin-bottom: 0.5rem;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+}
+.goods_list dl dd .goods_detail,.goods_list dl dd .goods_descript{
+	line-height: 1.1rem;
+}
+.goods_list a:last-child{
+	margin-bottom: 0;
+}
+.line{
+	width: 100%;
+	height: 8px;
+	background: #eee;
+}
+.goods_other .titles{
+	width: 100%;
+	height: 48px;
+	line-height: 48px;
+	text-align: center;
+}
+.goods_other .titles span{
+	display: inline-block;
+}
+.goods_other .titles span:first-child,.line2{
+    position: relative;
+	width: 40px;
+    height: 0px;
+    border-top: 1px solid #231915;
+    margin-right: 10px;
+    top:-5px;
+}
+.goods_other .titles span:nth-child(2){
+	font-size: 1.1rem;
+	margin-right: 10px;
+}
+.goods_other .title_p{
+	text-align: center;
+	color: #838383;
+	margin-bottom: 20px;
+}
+.goods_other ul{
+	width: 100%;
+}
+.goods_other ul li{
+	width: 50%;
+	float: left;
+}
+.goods_other ul li a{
+	display: block;
+	width: 100%;
+}
+.goods_other ul li a img{
+	width: 100%;
+	float: left;
+}
+.goods_other ul li a p{
+	color: #333;
+	text-align: center;
+	font-size: 1rem;
+	line-height: 1.4rem;
+}
+.blank{
+	width: 100%;
+	height: 30px;
+}
+.footer{
+	width: 100%;
+	text-align: center;
+}
+.footer a{
+	display: inline-block;
+	font-size: 0.9rem;
+	line-height: 3rem;
+	margin-right: 8px;
+	color: #333;
+}
+.footer a.circle{
+	font-size:1rem;
+}
+/*底部导航栏*/
+.footer_nav{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	background: white;
+	box-shadow: -15px 0 15px #ccc;
+}
+.footer_nav ul{
+	width:100%;
+	height: 50%;
+}
+.footer_nav ul li{
+	width: 25%;
+	height: 50px;
+	float: left;
+	text-align: center;
+}
+.footer_nav ul li a{
+	display: block;
+	width: 100%;
+	height: 50px;
+	color: #888;
+}
+.footer_nav ul li a.active{
+	color: #F04E0D;
+}
+.footer_nav ul li a i{
+	font-size: 22px;
+	line-height: 30px;
+}
+.footer_nav ul li a p{
+	font-size: 0.6rem;
+	line-height: 18px;
+}
+
+
+
+
+
+
+
+

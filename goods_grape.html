@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>生鲜商城产品详情</title>
+		<link rel="icon" href="img/logo.ico" />
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<!--<link rel="stylesheet" type="text/css" href="css/goods.css" />-->
+		<link rel="stylesheet" type="text/css" href="css/goods_pro.css" />
+		<link rel="stylesheet" type="text/css" href="fonts/iconfont.css" />
+		<style type="text/css">
+			.mui-content {
+				background: transparent;
+				width: 168px;
+				margin: 0 auto;
+			}
+			
+			.mui-slider .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
+				border-bottom: 2px solid #666;
+			}
+			
+			.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
+				color: #333;
+				font-weight: bold;
+				font-size: 0.98rem;
+			}
+			.number_addcar{
+				display: none;
+				position: absolute;
+				z-index: 9999;
+				right: 5px;
+				top:5px;
+				background: #f00;
+				color: white;
+				width: 16px;
+				line-height:1;
+				padding: 2px 2px;
+				text-align: center;
+				border-radius: 100px;
+				font-size: 12px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a href="index.html"><i class="iconfont icon-arrow-left icon-left"></i></a>
+			<h1 class="mui-title">
+				<a href="#product" class="active">商品</a><span>&nbsp;</span>
+				<a href="#details">详情</a><span>&nbsp;</span>
+				<a href="#evaluation">评价</a>
+			</h1>
+		</header>
+		<!--遮罩层以外的东西-->
+		<div class="body clearfix" style="margin-top: 44px;">
+			<!--商品图片信息-->
+			<a name="product"></a>
+			<div id="slider" class="mui-slider">
+				<div class="mui-slider-group mui-slider-group1">
+					<!--carousel代码自行添加-->
+				</div>
+				<div class="mui-slider-indicator mui-slider-goods">
+					<!--carousel代码自行添加-->
+				</div>
+			</div>
+			<!--商品标题信息-->
+			<div class="product_detial_titleBox">
+				<p class="goods_detial_title">国产红提葡萄 约1kg 新鲜水果</p>
+				<p class="goods_detial_descript">新鲜水果国产红提葡萄新鲜水果国产红提葡萄新鲜水果国产红提葡萄 约1kg新鲜水果</p>
+				<h2 class="current_price">¥&nbsp;<span>148</span></h2>
+				<div class="cleafix price_sale_box">
+					<p class="pre_price fl">原价：￥<span>30</span></p>
+					<p class="month_sale_number fr">月销量：<span>1234</span>件</p>
+				</div>
+			</div>
+
+			<!--分割线-->
+			<div class="line"></div>
+
+			<!--商品评价-->
+			<div class="gs_evaluate">
+				<!--有评价-->
+				<div class="gs_evaluate_ok" style="display: block;">
+					<p class="gs_evaluate_title">商品评价(<span>10<span>)</p>
+					<div class="gs_evaluate_content_box">
+						<p class="cleafix gs_evaluate_img_date">
+							<img src="img/my/photo.png" class="fl"/>
+							<span class="fl username">t****4</span>
+						<span class="fr date">2017-06-21</span>
+					</p>
+					<p class="gs_evaluate_content">物流很快，水果很新鲜！物流很快，水果很新鲜！物流很快，水果很新鲜！物流很快，水果很新鲜！物流很快，水果很新鲜！</p>
+					<ul class="clearfix gs_evaluate_img">
+						<li>
+							<img src="img/goods/grape1.jpg" />
+						</li>
+						<li>
+							<img src="img/goods/grape2.jpg" />
+						</li>
+						<li>
+							<img src="img/goods/grape5.jpg" />
+						</li>
+						<li>
+							<img src="img/goods/grape4.jpg" />
+						</li>
+					</ul>
+					<p class="buy_date">购买日期：<span>2017-06-21 11:03:12</span></p>
+				</div>
+				<button><a href="#evaluation" class="see_more">查看更多评价</a></button>
+			</div>
+			<!--没有评价-->
+			<div class="gs_evaluate_no" style="display: none;">
+				<p class="gs_evaluate_title">暂无评价</p>
+			</div>
+		</div>
+
+		<!--商品详情-->
+		<!--商品图片-->
+		<a name="details"></a>
+		<div class="line"></div>
+		<p class="gs_evaluate_title" style="margin-top: 10px;">商品详情</p>
+		<div class="product_detail cleafix">
+			<img src="img/goods/grape/grape_pro1.jpg" class="fl" />
+			<img src="img/goods/grape/grape_pro2.jpg" class="fl" />
+			<img src="img/goods/grape/grape_pro3.jpg" class="fl" />
+			<img src="img/goods/grape/grape_pro4.jpg" class="fl" />
+			<img src="img/goods/grape/grape_pro5.jpg" class="fl" />
+			<img src="img/goods/grape/grape_pro6.jpg" class="fl" />
+			<img src="img/goods/grape/grape_pro7.jpg" class="fl" />
+			<div style="clear: both;height: 0;"></div>
+		</div>
+
+		<!--商品规格-->
+		<div class="line"></div>
+		<p class="gs_evaluate_title" style="margin-top: 10px;">商品规格</p>
+		<div class="gs_style">
+			<table border="" cellspacing="" cellpadding="" width="100%" class="table-border">
+				<tbody>
+					<tr>
+						<td colspan="2">
+							<strong>主体</strong>
+						</td>
+					</tr>
+					<tr>
+						<td>贮存条件</td>
+						<td>冷藏 0-4℃</td>
+					</tr>
+					<tr>
+						<td>保质期</td>
+						<td>20天</td>
+					</tr>
+					<tr>
+						<td>净含量</td>
+						<td>约0.56kg</td>
+					</tr>
+					<tr>
+						<td>包装清单</td>
+						<td>百香果4个+柠檬4个</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<!--评价-->
+		<a name="evaluation"></a>
+		<div class="line"></div>
+		<p class="gs_evaluate_title" style="margin-top: 10px;">商品评价</p>
+		<!--评价盒子-->
+		<div class="gs_evaluate_box">
+			<!--第一条评价-->
+			<div class="gs_evaluate_content_box border">
+				<p class="cleafix gs_evaluate_img_date">
+					<img src="img/my/photo.png" class="fl" />
+					<span class="fl username">t****4</span>
+					<span class="fr date">2017-06-21</span>
+				</p>
+				<p class="gs_evaluate_content">物流很快，水果很新鲜！物流很快，水果很新鲜！物流很快，水果很新鲜！物流很快，水果很新鲜！物流很快，水果很新鲜！</p>
+				<ul class="clearfix gs_evaluate_img">
+					<li>
+						<img src="img/goods/grape1.jpg" />
+					</li>
+					<li>
+						<img src="img/goods/grape2.jpg" />
+					</li>
+					<li>
+						<img src="img/goods/grape5.jpg" />
+					</li>
+					<li>
+						<img src="img/goods/grape4.jpg" />
+					</li>
+				</ul>
+				<p class="buy_date">购买日期：<span>2017-06-21 11:03:12</span></p>
+			</div>
+			<!--第二条评价-->
+			<div class="gs_evaluate_content_box border">
+				<p class="cleafix gs_evaluate_img_date">
+					<img src="img/my/photo.png" class="fl" />
+					<span class="fl username">t****4</span>
+					<span class="fr date">2017-06-21</span>
+				</p>
+				<p class="gs_evaluate_content">物流很快，水果很新鲜！物流很快，水果很新鲜！物流很快，水果很新鲜！物流很快，水果很新鲜！物流很快，水果很新鲜！</p>
+				<ul class="clearfix gs_evaluate_img">
+					<li>
+						<img src="img/goods/grape1.jpg" />
+					</li>
+					<li>
+						<img src="img/goods/grape2.jpg" />
+					</li>
+					<li>
+						<img src="img/goods/grape5.jpg" />
+					</li>
+					<li>
+						<img src="img/goods/grape4.jpg" />
+					</li>
+				</ul>
+				<p class="buy_date">购买日期：<span>2017-06-21 11:03:12</span></p>
+			</div>
+			<!--第三条评价-->
+			<div class="gs_evaluate_content_box border">
+				<p class="cleafix gs_evaluate_img_date">
+					<img src="img/my/photo.png" class="fl" />
+					<span class="fl username">t****4</span>
+					<span class="fr date">2017-06-21</span>
+				</p>
+				<p class="gs_evaluate_content">物流很快，水果很新鲜！物流很快，水果很新鲜！物流很快，水果很新鲜！物流很快，水果很新鲜！物流很快，水果很新鲜！</p>
+				<ul class="clearfix gs_evaluate_img">
+					<li>
+						<img src="img/goods/grape1.jpg" />
+					</li>
+					<li>
+						<img src="img/goods/grape2.jpg" />
+					</li>
+					<li>
+						<img src="img/goods/grape5.jpg" />
+					</li>
+					<li>
+						<img src="img/goods/grape4.jpg" />
+					</li>
+				</ul>
+				<p class="buy_date">购买日期：<span>2017-06-21 11:03:12</span></p>
+			</div>
+			<p style="text-align: center;color: #888;margin-top: 10px;">没有更多评价了！</p>
+		</div>
+		<!--分割线-->
+		<div class="line2"></div>
+		<!--立即购买-->
+		<footer class="cleafix">
+			<i class="iconfont icon-gouwuche1" style="font-size: 24px;">
+					<span class="number_addcar">1</span>
+				</i>
+			<div class="addcar_buy cleafix">
+				<span id="addcar1">加入购物车</span>
+				<span id="buy1">立即购买</span>
+			</div>
+		</footer>
+		</div>
+		<!--遮罩选择购买方式-->
+		<div class="shade">
+			<div class="goods_detailBox">
+				<div class="goods_title">
+					<img src="img/goods/grape5.jpg" alt="" />
+					<div class="goods_detail">
+						<p>国产红提葡萄 约1kg 新鲜水果</p>
+						<p>￥169</p>
+						<i class="iconfont icon-cha exit"></i>
+					</div>
+				</div>
+				<div class="goods_order cleafix">
+					<p>购买数量：</p>
+					<div class="mui-numbox buy_numbox" style="width: 81px;height: 24px;" data-numbox-min='1'>
+						<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+						<input class="mui-input-numbox" type="number" />
+						<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+					</div>
+					<div class="addcar_buy2 cleafix">
+						<span id="addcar2">加入购物车</span>
+						<span id="buy2"><a href="address.html" style="color: white;">立即购买</a></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--提示-->
+		<p class="prompt prompt_addcar">加入购物车成功！</p>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<!--轮播图代码-->
+		<script src="js/carousel.js" type="text/javascript" charset="utf-8"></script>
+		<!--mui插件-->
+		<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script src="js/mui.previewimage.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mui.zoom.js" type="text/javascript" charset="utf-8"></script>-->
+		<script src="js/goods.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script>
+			mui.previewImage();
+		</script>-->
+		<!--<script type="text/javascript">
+			(function($) {
+				$('.mui-scroll-wrapper').scroll({
+					indicators: true //是否显示滚动条
+				});
+				var sliderSegmentedControl = document.getElementById('sliderSegmentedControl');
+				$('.mui-input-group').on('change', 'input', function() {
+					if(this.checked) {
+						sliderSegmentedControl.className = 'mui-slider-indicator mui-segmented-control mui-segmented-control-inverted mui-segmented-control-' + this.value;
+						//force repaint
+						sliderProgressBar.setAttribute('style', sliderProgressBar.getAttribute('style'));
+					}
+				});
+			})(mui);
+		</script>-->
+	</body>
+
+</html>

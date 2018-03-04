@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>吐槽&建议</title>
+		<link rel="icon" href="img/logo.ico" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/feedback.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="fonts/iconfont.css"/>
+	</head>
+
+	<body style="background: #eee;">
+		<header>
+			<a href="my.html"><i class="iconfont icon-arrow-left icon-left"></i></a>
+			<h1 class="mui-title">问题反馈 </h1>
+		</header>
+		<div class="feedback_box" style="margin-top: 52px;">
+			<img src="img/customer_service/feedback.jpg" />
+			<p>如果需要解决问题，请找客服提交工单，这里仅用于收集客户建议.</p>
+			<div class="feedback_select">
+				<div class="container-fluid" style="padding: 0;">
+					<form class="form-horizontal">
+						<div class="form-group">
+							<label for="feedbackType" class="col-xs-4 control-label" style="line-height: 34px;">反馈类型:</label>
+							<div class="col-xs-8">
+								<select class="form-control" id='feedbackType' for='feedbackType'>
+									<option value="1">质量问题</option>
+									<option value="2">物流问题</option>
+									<option value="3">产品建议</option>
+									<option value="4">功能使用</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group feedbackSubproduct">
+							<label for="feedbackSubproduct" class="col-xs-4 control-label" style="line-height: 34px;">吐槽类别:</label>
+							<div class="col-xs-8">
+								<select class="form-control" id="feedbackSubproduct" for="feedbackSubproduct">
+									<option value="1">1套餐</option>
+									<option value="2">2套餐</option>
+									<option value="3">3套餐</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="email" class="col-xs-4 control-label" style="line-height: 34px;">你的邮箱:</label>
+							<div class="col-xs-8">
+								<input type="email" class="form-control" id="email" name="email">
+								<label id='email-error' class="error" for="email" style="display: none;">你的邮箱地址错误</label>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="mobile" class="col-xs-4 control-label" style="line-height: 34px;">手机号码:</label>
+							<div class="col-xs-8">
+								<input type="tel" class="form-control" id="mobile" name="mobile">
+								<label id='mobile-error' class="error" for="email" style="display: none;">你的手机格式不正确！</label>
+							</div>
+						</div>
+						<div class="form-group" style="margin-bottom: 15px;">
+							<div class="col-xs-12">
+								<textarea class="form-control" id="content" name="content" rows="5" placeholder="反馈内容请写在这里..."></textarea>
+								<label id="content-error" class="error" for="content" style="display: none;">反馈内容不能为空</label>
+							</div>
+						</div>
+						<button type="submit" class="btn btn-primary btn-lg btn-block" id='btnSubmit'>发送</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

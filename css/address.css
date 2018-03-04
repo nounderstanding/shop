@@ -1,0 +1,97 @@
+body{
+	background: #eee;
+	padding: 5px;
+}
+.send_address,.goods_order{
+	margin-top: 44px;
+	background: #fff;
+	margin-bottom: 10px;
+}
+.send_address_content{
+	line-height: 38px;
+	margin-left: 10px;
+	border-bottom: 1px solid #eee;
+}
+.send_address_content span{
+	font-size: 0.9rem;
+	margin-left: 3px;
+}
+.receive_address{
+	line-height: 80px;
+	padding-left: 30px;
+	padding-right: 8px;
+}
+.receive_address span{
+	float: left;
+	color: #999;
+	font-size: 0.9rem;
+}
+.receive_address i{
+	float: right;
+	font-weight: bold;
+	color: #333;
+	font-size: 0.9rem;
+}
+.goods_order .img_message{
+	padding: 10px;
+	border-bottom: 1px solid #eee;
+}
+.goods_order .img_message img{
+	width: 50px;
+	height: 50px;
+}
+.goods_order .img_message i,.goods_order .img_message span{
+	float: right;
+	line-height: 50px;
+}
+.goods_order .img_message span{
+	margin-right: 10px;
+	font-size: 0.9rem;
+	color: #999;
+}
+.goods_order .img_message i{
+	font-weight: bold;
+	color: #333;
+	font-size: 0.9rem;
+}
+.goods_message{
+	padding:10px;
+}
+.goods_message span{
+	display: inline-block;
+}
+.goods_message span:first-child{
+	float: left;
+}
+.goods_message span:last-child{
+	float: right;
+}
+.submit_order{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 90px;
+	background: #fff;
+	padding: 10px;
+	border-top:1px solid #dfdfdf;
+}
+.submit_order p{
+	text-align: center;
+	font-size: 0.9rem;
+	margin-bottom: 10px;
+}
+.submit_order p span{
+	color: #F97E24;
+}
+.commit_order{
+	width: 100%;
+	height: 40px;
+	line-height: 28px;
+	background: #F97E24;
+	border: none;
+	outline: none;
+	color: white;
+}
+
+

@@ -1,0 +1,29 @@
+.jifen_current{
+	font-size: 1.1rem;
+	text-align: center;
+	padding: 15px 0;
+	border-bottom:1px solid #dedede;
+}
+.jifen_way_box li{
+	padding: 20px 15px;
+	border-bottom:1px solid #dedede;
+}
+.jifen_way_box li .jifen_way{
+	float: left;
+}
+.jifen_way_box li span{
+	display: block;
+	float: right;
+	color: #F97E24;
+	font-size: 1.8rem;
+}
+.jifen_way_box li .jifen_way p:first-child{
+	color: #000;
+	font-size: 0.8rem;
+	font-weight: bold;
+	line-height:2rem;
+}
+.jifen_way_box li .jifen_way p:last-child{
+	color: #888;
+	font-size: 0.9rem;
+}

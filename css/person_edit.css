@@ -1,0 +1,36 @@
+header {
+	background: #f7f7f7;
+	box-shadow: 0 1px 6px #ccc;
+	padding-left: 10px;
+}
+
+header h1 {
+	position: absolute;
+	right: 40px;
+	left: 40px;
+	display: inline-block;
+	overflow: hidden;
+	width: auto;
+	margin: 0;
+	text-overflow: ellipsis;
+	font-size: 17px;
+	font-weight: 500;
+	padding: 0;
+	text-align: center;
+	white-space: nowrap;
+	color: #000;
+	line-height: 44px;
+}
+ul li a{
+	display: block;
+	width: 100%;
+	border-bottom: 1px solid #dedede;
+	padding: 12px;
+	font-size: 0.9rem;
+	color: #333;
+}
+ul li a i{
+	float: right;
+	font-size: 0.4rem;
+	font-weight: bold;
+}

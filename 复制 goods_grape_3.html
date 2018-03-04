@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>生鲜商城产品详情</title>
+		<link rel="icon" href="img/logo.ico" />
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<!--<link rel="stylesheet" type="text/css" href="css/goods.css" />-->
+		<link rel="stylesheet" type="text/css" href="css/goods_pro.css" />
+		<link rel="stylesheet" type="text/css" href="fonts/iconfont.css" />
+		<style type="text/css">
+			.mui-content {
+				/*background: transparent;*/
+				/*width: 168px;*/
+				/*margin: 0 auto;*/
+			}
+			
+			.mui-slider .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
+				border-bottom: 2px solid #666;
+			}
+			
+			.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
+				color: #333;
+				font-weight: bold;
+				font-size: 0.98rem;
+			}
+			
+			.number_addcar {
+				display: none;
+				position: absolute;
+				z-index: 9999;
+				right: 5px;
+				top: 5px;
+				background: #f00;
+				color: white;
+				width: 16px;
+				/*height: 16px;*/
+				line-height: 1;
+				padding: 2px 2px;
+				text-align: center;
+				border-radius: 100px;
+				font-size: 12px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div id="slider" class="mui-slider">
+				<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<a class="mui-control-item" href="#item1mobile">
+						待办公文
+					</a>
+					<a class="mui-control-item" href="#item2mobile">
+						已办公文
+					</a>
+					<a class="mui-control-item" href="#item3mobile">
+						全部公文
+					</a>
+				</div>
+				<!--<div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-4"></div>-->
+				<div class="mui-slider-group">
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+						<div id="scroll1" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								gfrgfdsgfdsgfsd
+							</div>
+						</div>
+					</div>
+					<div id="item2mobile" class="mui-slider-item mui-control-content mui-active">
+						<div id="scroll2" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								jfijgdsjgfkdgjfs
+							</div>
+						</div>
+					</div>
+					<div id="item3mobile" class="mui-slider-item mui-control-content mui-active">
+						<div id="scroll3" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								gfhhhhhhhhhhhhhhhhh
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+		</div>
+		
+		
+		
+		<div class="line2"></div>
+		
+		<footer class="cleafix">
+			<i class="iconfont icon-gouwuche1" style="font-size: 24px;">
+					<span class="number_addcar">1</span>
+				</i>
+			<div class="addcar_buy cleafix">
+				<span id="addcar1">加入购物车</span>
+				<span id="buy1">立即购买</span>
+			</div>
+		</footer>
+
+		<div class="shade">
+			<div class="goods_detailBox">
+				<div class="goods_title">
+					<img src="img/goods/grape5.jpg" alt="" />
+					<div class="goods_detail">
+						<p>国产红提葡萄 约1kg 新鲜水果</p>
+						<p>￥169</p>
+						<i class="iconfont icon-cha exit"></i>
+					</div>
+				</div>
+				<div class="goods_order cleafix">
+					<p>购买数量：</p>
+					<div class="mui-numbox buy_numbox" style="width: 81px;height: 24px;" data-numbox-min='1'>
+						<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+						<input class="mui-input-numbox" type="number" />
+						<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+					</div>
+					<div class="addcar_buy2 cleafix">
+						<span id="addcar2">加入购物车</span>
+						<span id="buy2"><a href="address.html" style="color: white;">立即购买</a></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<p class="prompt prompt_addcar">加入购物车成功！</p>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<!--轮播图代码-->
+		<script src="js/carousel.js" type="text/javascript" charset="utf-8"></script>
+		<!--mui插件-->
+		<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script src="js/mui.previewimage.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mui.zoom.js" type="text/javascript" charset="utf-8"></script>-->
+		<script src="js/goods.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script>
+			mui.previewImage();
+		</script>-->
+		<script type="text/javascript">
+			(function($) {
+				$('.mui-scroll-wrapper').scroll({
+					indicators: true //是否显示滚动条
+				});
+				var sliderSegmentedControl = document.getElementById('sliderSegmentedControl');
+				$('.mui-input-group').on('change', 'input', function() {
+					if(this.checked) {
+						sliderSegmentedControl.className = 'mui-slider-indicator mui-segmented-control mui-segmented-control-inverted mui-segmented-control-' + this.value;
+						//force repaint
+						sliderProgressBar.setAttribute('style', sliderProgressBar.getAttribute('style'));
+					}
+				});
+			})(mui);
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,29 @@
+.cancel_img {
+	width: 140px;
+	margin: 0 auto;
+	margin-top:100px;
+}
+img{
+	width: 140px;
+}
+p{
+	text-align: center;
+	line-height: 1.6rem;
+	font-size: 0.8rem;
+	color: #999;
+}
+a{
+	display: block;
+	text-align: center;
+	font-size: 0.9rem;
+	color: #333;
+}
+a.my_all_order{
+	border:1px solid #dedede;
+	margin: 15px;
+	padding: 10px 15px;
+	border-radius: 5px;
+}
+a.index{
+	text-decoration: underline;
+}

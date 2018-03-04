@@ -1,0 +1,62 @@
+body {
+	background: #eee;
+}
+
+.feedback_box {
+	margin: 10px;
+	padding: 15px;
+	background: white;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+}
+
+.feedback_box img {
+	width: 100%;
+}
+
+.feedback_box p {
+	font-size: 0.9rem;
+	padding: 15px 0;
+}
+
+.error {
+	color: red;
+	padding-top: 5px;
+}
+
+.feedbackSub,
+.feedbackSubproduct {
+	display: none;
+}
+
+.form-group {
+	margin-bottom: 8px;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #f7f7f7;
+	box-shadow: 0 1px 6px #ccc;
+	padding-left: 10px;
+}
+
+header h1 {
+	position: absolute;
+	right: 40px;
+	left: 40px;
+	display: inline-block;
+	overflow: hidden;
+	width: auto;
+	margin: 0;
+	text-overflow: ellipsis;
+	font-size: 17px;
+	font-weight: 500;
+	padding: 0;
+	text-align: center;
+	white-space: nowrap;
+	color: #000;
+	line-height: 44px;
+}

@@ -1,0 +1,272 @@
+/*基础样式*/
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "PingFang", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+	box-sizing: border-box;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+/*去除点击时的背景*/
+
+li,
+a {
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	-webkit-user-select: none;
+	-moz-user-focus: none;
+	-moz-user-select: none;
+}
+
+
+/*去除浮动*/
+
+
+/*==for IE6/7 Maxthon2==*/
+
+.clearfix {
+	zoom: 1;
+}
+
+.clearfix:after {
+	clear: both;
+	content: '.';
+	display: block;
+	width: 0;
+	height: 0;
+	visibility: hidden;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+body {
+	font-size: 16px;
+	font-size: 62.5%;
+}
+
+
+/*头部*/
+
+.header {
+	padding: 10px 15px 15px 15px;
+}
+
+.header h2 {
+	width: 35%;
+	margin: 0 auto;
+}
+
+.header h2 i {
+	width: 100%;
+	color: #F97E24;
+}
+
+body {
+	background: white;
+}
+
+.header {
+	height: 44px;
+	text-align: center;
+	font-size: 1rem;
+	background: #F7F7F7;
+	border-bottom: 1px solid #dfdfdf;
+}
+
+a {
+	cursor: pointer;
+}
+
+
+/*顶部导航*/
+
+.mui-content {
+	background: white;
+	z-index: 9999;
+}
+
+nav ul {
+	width: 100%;
+	/*规定段落中的文本不进行换行*/
+	white-space: nowrap;
+	font-size: 1rem;
+	overflow: hidden;
+	background: white;
+}
+
+nav ul li {
+	display: inline-block;
+	line-height: 40px;
+}
+
+nav ul li a {
+	display: inline-block;
+	color: #333;
+	text-align: center;
+	margin: 0 8px;
+}
+
+nav ul li.active a {
+	color: #F97E24;
+	/*border-bottom: 2px solid #61C5FE;*/
+}
+
+.form {
+	width: 100%;
+	background: #eee;
+	padding: 2px 0;
+}
+
+.search {
+	width: 92%;
+	margin: 2% 4%;
+	border: 1px solid #ccc;
+	height: 30px;
+	border-radius: 5px;
+	background: #fff;
+}
+
+.search input {
+	width: 88%;
+	height: 100%;
+	border: none;
+	outline: none;
+	margin-right: 3px;
+	font-size: 0.8rem;
+}
+
+.search .search_logo {
+	display: inline-block;
+	float: left;
+	font-size: 1.2rem;
+	text-align: center;
+	line-height: 30px;
+	margin-left: 10px;
+	color: #888888;
+}
+
+
+/*底部导航栏*/
+
+.footer_nav {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	background: white;
+	box-shadow: -15px 0 15px #ccc;
+	z-index: 9999;
+}
+
+.footer_nav ul {
+	width: 100%;
+	height: 50%;
+}
+
+.footer_nav ul li {
+	width: 25%;
+	height: 50px;
+	float: left;
+	text-align: center;
+}
+
+.footer_nav ul li a {
+	display: block;
+	width: 100%;
+	height: 50px;
+	color: #888;
+}
+
+.footer_nav ul li a.active {
+	color: #F04E0D;
+}
+
+.footer_nav ul li a i {
+	font-size: 22px;
+	line-height: 30px;
+}
+
+.footer_nav ul li a p {
+	font-size: 0.6rem;
+	line-height: 18px;
+}
+
+.bottom_fifth {
+	margin-bottom: 50px;
+}
+
+.form.active {
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 9999;
+}
+.mui-bar-nav~.mui-content {
+     padding-top: 0;
+}
+.mui-content.active{
+	position: fixed;
+	left: 0;
+	top:50px;
+}
+#end {
+	position: relative;
+}
+
+.u-flyer {
+	display: block;
+	width: 34px;
+	height: 34px;
+	border-radius: 34px;
+	position: fixed;
+	z-index: 9999;
+}
+
+.addcar_number {
+	display: none;
+	position: absolute;
+	top: -1px;
+	right: -6px;
+	background: #F25D21;
+	padding: 2px 5px;
+}
+
+.addcar_number.ten {
+	right: -14px;
+}
+
+.addcar_number.hundred {
+	right: -20px;
+}
+.prompt{
+	display: none;
+	position: fixed;
+	bottom: 46%;
+	left: 28%;
+	background: rgba(0,0,0,.7);
+	padding: 10px 15px;
+	/*margin: 0 auto;*/
+	color: white;
+	border-radius: 3px;
+	z-index: 9999;
+}
+.icon-left{
+	line-height: 44px;
+	font-size: 24px;
+	color: #888;
+}

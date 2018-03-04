@@ -1,0 +1,84 @@
+.bind_phone_box {
+	padding: 15px;
+}
+
+.bind_phone_box .tel {
+	border-bottom: 1px solid #dedede;
+}
+
+input,
+button {
+	border: none;
+	outline: none;
+	color: #333;
+	font-size: 0.9rem;
+}
+
+input {
+	padding: 10px 0;
+}
+
+#verification_code {
+	display: block;
+	width: 100%;
+	border-bottom: 1px solid #dedede;
+	padding-top: 20px;
+	/*为placehoder设置颜色
+	::-webkit-input-placeholder { 
+	　　color:red;
+	}
+	:-moz-placeholder { 
+	　　color:red;
+	}
+	::-moz-placeholder {
+	　　color:red;
+	}
+	:-ms-input-placeholder {
+	　　color:red;
+	}
+	*/
+}
+
+button {
+	background: transparent;
+}
+
+.tel button {
+	border: 1px solid #eee;
+	color: #ddd;
+	padding: 5px 10px;
+}
+
+.submit_bind {
+	display: block;
+	width: 100%;
+	text-align: center;
+	margin: 80px 0;
+	padding: 10px;
+	background: #ddd;
+	color: white;
+}
+
+header {
+	background: #f7f7f7;
+	box-shadow: 0 1px 6px #ccc;
+	padding-left: 10px;
+}
+
+header h1 {
+	position: absolute;
+	right: 40px;
+	left: 40px;
+	display: inline-block;
+	overflow: hidden;
+	width: auto;
+	margin: 0;
+	text-overflow: ellipsis;
+	font-size: 17px;
+	font-weight: 500;
+	padding: 0;
+	text-align: center;
+	white-space: nowrap;
+	color: #000;
+	line-height: 44px;
+}
